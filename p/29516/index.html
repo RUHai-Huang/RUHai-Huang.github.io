@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo+Github Pages快速打造属于自己的网站 | RUHai's blog</title><meta name="author" content="Huang"><meta name="copyright" content="Huang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言 前人栽树，后人乘凉！本网站在实验室H师兄的帮助和启发下勉强完成的，因此想重新复盘和记录下心路历程，其中绝大部分内容搬运和参考了H师兄的博客royhuang’s blog以及主题Hexo-Butterfly官方文档，最后再次感谢师兄对本网站的鼎力相助。本网站的初衷是（装逼）熟悉和学习建站的流程（其实并没有什么难度，框架的集成度已经非常高了）。自己平时学习知识的时候也喜欢在语雀上记笔记，因此会不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+Github Pages快速打造属于自己的网站">
+<meta property="og:url" content="https://ruhai-huang.github.io/p/29516/index.html">
+<meta property="og:site_name" content="RUHai&#39;s blog">
+<meta property="og:description" content="前言 前人栽树，后人乘凉！本网站在实验室H师兄的帮助和启发下勉强完成的，因此想重新复盘和记录下心路历程，其中绝大部分内容搬运和参考了H师兄的博客royhuang’s blog以及主题Hexo-Butterfly官方文档，最后再次感谢师兄对本网站的鼎力相助。本网站的初衷是（装逼）熟悉和学习建站的流程（其实并没有什么难度，框架的集成度已经非常高了）。自己平时学习知识的时候也喜欢在语雀上记笔记，因此会不">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-1304563860.cos.ap-chongqing.myqcloud.com/img/IMG_20200101_124208.jpg">
+<meta property="article:published_time" content="2021-12-11T09:25:00.000Z">
+<meta property="article:modified_time" content="2021-12-11T09:25:00.000Z">
+<meta property="article:author" content="Huang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-1304563860.cos.ap-chongqing.myqcloud.com/img/IMG_20200101_124208.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ruhai-huang.github.io/p/29516/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo+Github Pages快速打造属于自己的网站',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-12-11 17:25:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://img-1304563860.cos.ap-chongqing.myqcloud.com/img/IMG_20200101_124208.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">RUHai's blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hexo+Github Pages快速打造属于自己的网站</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-11T09:25:00.000Z" title="发表于 2021-12-11 17:25:00">2021-12-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-12-11T09:25:00.000Z" title="更新于 2021-12-11 17:25:00">2021-12-11</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hexo+Github Pages快速打造属于自己的网站"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>前人栽树，后人乘凉！<br>本网站在实验室H师兄的帮助和启发下勉强完成的，因此想重新复盘和记录下心路历程，其中<strong>绝大部分内容搬运和参考</strong>了H师兄的博客<a target="_blank" rel="noopener" href="https://hwh.zone/"><strong>royhuang’s blog</strong></a>以及主题<a target="_blank" rel="noopener" href="https://butterfly.js.org/"><strong>Hexo-Butterfly官方文档</strong></a>，最后再次感谢师兄对本网站的鼎力相助。<br>本网站的初衷是<del>（装逼）</del>熟悉和学习建站的流程（其实并没有什么难度，框架的集成度已经非常高了）。自己平时学习知识的时候也喜欢在<a target="_blank" rel="noopener" href="https://www.yuque.com/huang-tzqhd"><strong>语雀</strong></a>上记笔记，因此会不定期将学习笔记整理归纳到本网站中。</p>
+</blockquote>
+<h2 id="主流建站方式比较"><a href="#主流建站方式比较" class="headerlink" title="主流建站方式比较"></a>主流建站方式比较</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>建站难度</th>
+<th>所需知识</th>
+<th>定制化程度</th>
+<th>适合人群</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>WordPress</td>
+<td>🌟🌟</td>
+<td>Linux、Git基本知识</td>
+<td>一般</td>
+<td>Web开发小白</td>
+<td><a target="_blank" rel="noopener" href="https://blog.csdn.net/hwh1996/article/details/90666775">WordPress从0开始建站</a></td>
+</tr>
+<tr>
+<td>Java Web</td>
+<td>🌟🌟🌟🌟</td>
+<td>Web前后端开发知识，多且杂</td>
+<td>非常高，前后端代码全栈开发</td>
+<td>Java Web开发人员</td>
+<td></td>
+</tr>
+<tr>
+<td>Hexo + Github Pages</td>
+<td>🌟🌟</td>
+<td>Linux、Git基本知识</td>
+<td>较高，基于配置文件修改较方便</td>
+<td>Web开发小白</td>
+<td><strong>不需要备案域名</strong></td>
+</tr>
+<tr>
+<td>Hexo + 腾讯云</td>
+<td>🌟🌟</td>
+<td>Linux、Git基本知识</td>
+<td>较高，基于配置文件修改较方便</td>
+<td>Web开发小白</td>
+<td><strong>域名需要备案</strong>，但网站访问速度会变快很多</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>Java Web全栈搭建？</strong><ul>
+<li>适合Java Web为技术栈的专业人员，可以作为个小项目；</li>
+<li>但如果你并非专业的Java Web开发人员，不想学习复杂的Java Web体系，但是又具备开发基础知识，想搭建一个漂亮的博客，<strong>WordPress 和 Hexo</strong>是你不二的选择。</li>
+</ul>
+</li>
+<li><strong>WordPress还是Hexo？</strong><ul>
+<li>WordPress优点：<strong>很简单</strong>，适合特别小白的同学；</li>
+<li>WordPress缺点：<strong>占用资源多，响应慢</strong>；不支持原生markdown（每次要导出.html太痛苦了）；主题也不够美观。</li>
+</ul>
+</li>
+</ul>
+<p><strong>所以还是推荐使用Hexo。</strong></p>
+<ul>
+<li><strong>Hexo + Github Pages 还是 Hexo + 腾讯云?</strong><ul>
+<li><strong>如果使用Github Pages 托管网站</strong>，因为服务器在国外（Github），<strong>域名无需备案</strong>，但访问速度<strong>可能会慢</strong>（自我体验还可接受），也<strong>无需购买</strong>云服务器；</li>
+<li><strong>如果使用腾讯云托管网站</strong>，<strong>需要购买</strong>云服务器（或COS），且<strong>域名需要备案</strong>，但访问<strong>速度会很快</strong>。</li>
+</ul>
+</li>
+</ul>
+<p>​</p>
+<p>本文考虑<strong>更低成本，也不想备案，访问速度虽然慢点</strong>但还能接受，所以采用<strong>Hexo + Github Pages</strong>作为最终的建站方案。</p>
+<hr>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="准备工作：Github-amp-Git"><a href="#准备工作：Github-amp-Git" class="headerlink" title="准备工作：Github &amp; Git"></a>准备工作：Github &amp; Git</h3><ol>
+<li><strong>创建Github个人仓库</strong></li>
+</ol>
+<p>​</p>
+<p>⚠️ 注意命令方式必须为：<code>Github用户名.github.io</code> ，这种形式。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639210003812-8e15739b-1fe2-4071-9c90-9e14ee954db0.png#clientId=u4b3a34f9-be23-4&from=paste&height=277&id=u1b1b8b9c&margin=%5Bobject%20Object%5D&name=image.png&originHeight=554&originWidth=960&originalType=binary&ratio=1&size=117637&status=done&style=none&taskId=u562aaafc-6565-4bcd-83f7-5e43f4c3afb&width=480" alt="image.png"></p>
+<ul>
+<li>**登陆用户名和昵称分不清?**你的个人主页，下面红框所示才是你的用户名。</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639210049804-3cb14935-3631-4916-a103-977c38b2eb24.png#clientId=u4b3a34f9-be23-4&from=paste&height=87&id=udb510879&margin=%5Bobject%20Object%5D&name=image.png&originHeight=174&originWidth=718&originalType=binary&ratio=1&size=36462&status=done&style=none&taskId=u1a86fdcc-9825-4a8d-81f1-72a5bc5e97d&width=359" alt="image.png"></p>
+<ol start="2">
+<li><strong>安装Git</strong></li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git下载地址</a> , 安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，则Git安装成功。（macOS直接打开终端，输入<code>git version</code>，正确输出则安装成功）<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639210264011-b97b9c4f-1f0c-4f7d-a9d1-5baafe744b40.png#clientId=u4b3a34f9-be23-4&from=paste&height=39&id=u533bde9c&margin=%5Bobject%20Object%5D&name=image.png&originHeight=78&originWidth=686&originalType=binary&ratio=1&size=16803&status=done&style=none&taskId=u78443155-5a8d-43c0-a13a-6c6afa9ed06&width=343" alt="image.png"><br>同时还需配置Git<strong>用户名和邮箱，</strong>每一个 Git 提交都会使用这些信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;huang&quot;</span>    </span><br><span class="line">$ git config --global user.email <span class="string">&quot;123456789@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>安装Node.js</strong><blockquote>
+<p>Hexo基于Node.js，需要安装相关组件。</p>
+</blockquote>
+</li>
+</ol>
+<p>下载 <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a> , 一直默认安装即可（不要随意勾选）。<br>安装成功后，分别输入 <code>node -v</code> &amp; <code>npm -v</code>，出现以下版本信息则安装成功：<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639210625650-fd7b4720-e7ab-4368-b736-dbf87d4a313a.png#clientId=u4b3a34f9-be23-4&from=paste&height=77&id=u94cbdcc7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=154&originWidth=622&originalType=binary&ratio=1&size=21429&status=done&style=none&taskId=u87f1ad3b-69d3-4b18-95a6-b2f04045ab5&width=311" alt="image.png"></p>
+<h3 id="搭建Hexo"><a href="#搭建Hexo" class="headerlink" title="搭建Hexo"></a>搭建Hexo</h3><ol>
+<li>新建文件夹</li>
+</ol>
+<p>我们在合适的路径新建一个文件夹，命名随意，我命名为：<a target="_blank" rel="noopener" href="http://www.ruhai.blog./">www.RUHai.blog。</a><br>​</p>
+<ol start="2">
+<li><p>安装Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli </span><br></pre></td></tr></table></figure></li>
+<li><p>初始化博客</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ./www.RUHai.blog/ <span class="comment">#就是命令行切换到新建文件夹目录，每个人的情况不太一样。</span></span><br><span class="line">hexo init blog</span><br></pre></td></tr></table></figure></li>
+<li><p>本地测试验证</p>
+</li>
+</ol>
+<p>​</p>
+<blockquote>
+<p>⚠️ 注意以下命令全部都在：<a target="_blank" rel="noopener" href="http://www.ruhai.blog/blog">www.RUHai.blog/blog</a> 文件夹路径下执行。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new test_my_site  <span class="comment"># 生成一篇新文章</span></span><br><span class="line">hexo g  <span class="comment"># 生成静态文件（网页）</span></span><br><span class="line">hexo s  <span class="comment"># 本地生成静态网站预览</span></span><br></pre></td></tr></table></figure>
+<p>执行完毕后，浏览器输入：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> ，出现以下页面则生成成功：<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639211070657-0419fe05-8013-4e8f-aee0-cb3e3e9e19ea.png#clientId=u4b3a34f9-be23-4&from=paste&height=308&id=u5b311f68&margin=%5Bobject%20Object%5D&name=image.png&originHeight=616&originWidth=1084&originalType=binary&ratio=1&size=466867&status=done&style=none&taskId=u1375223d-543f-4bf3-bd3d-d9eb33a7bdd&width=542" alt="image.png"><br>​</p>
+<p>⚠️如果hexo s 执行成功，浏览器却打不开，通常是端口（4000）被占用。可以设置hexo使用别的端口：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 4001</span><br></pre></td></tr></table></figure>
+<p>然后输入：<a target="_blank" rel="noopener" href="http://localhost:4001/">http://localhost:4001</a> ，重新打开即可。<br>​</p>
+<ol start="5">
+<li>配置远程推送信息</li>
+</ol>
+<p>在 <a target="_blank" rel="noopener" href="http://www.ruhai.blog/blog">www.RUHai.blog/blog</a> 路径下，找到主配置文件：__config.yml ：<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639211244875-52c41971-d534-4f46-850b-9d6acf4aefb8.png#clientId=u4b3a34f9-be23-4&from=paste&height=474&id=u2b97a035&margin=%5Bobject%20Object%5D&name=image.png&originHeight=948&originWidth=1228&originalType=binary&ratio=1&size=192854&status=done&style=none&taskId=u1a8ebac3-3411-4a38-8d6c-ff70a1edc4a&width=614" alt="image.png"><br>⚠️该配置文件对缩进等都有严格要求，建议用IDE打开编辑（比如VScode），不易出错。<br>​</p>
+<p>在文件最下方配置相关信息：<br>⚠️<code>:</code>后面需要留一个空格，repo地址最后需要带上<code>.git</code>!</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/RUHai-Huang/RUHai-Huang.github.io.git</span> <span class="comment"># 修改为你自己的项目地址，最后再添加一个.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li><p>安装Git插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<li><p>写一篇自己的文章</p>
+<blockquote>
+<p><strong><a target="_blank" rel="noopener" href="http://www.ruhai.blog/blog/source/_posts">www.RUHai.blog/blog/source/_posts</a></strong>路径下的** md 文件**，会被Hexo自动解析、渲染生成网页。<br>我们所有的博客都是放在这个目录的。因此可以从其他笔记软件（例如语雀）中导出md文件笔记放到此目录中。</p>
+</blockquote>
+</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639211992813-1e1d1fa0-8bf5-4a2d-89b7-c97d157cf973.png#clientId=u4b3a34f9-be23-4&from=paste&height=518&id=Hlwpf&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1036&originWidth=1244&originalType=binary&ratio=1&size=107935&status=done&style=none&taskId=u3a62e849-253c-422e-8406-d85f8f5bf05&width=622" alt="image.png"><br>我们在：<strong><a target="_blank" rel="noopener" href="http://www.ruhai.blog/blog/source/_posts">www.RUHai.blog/blog/source/_posts</a></strong> 路径下，写一篇属于自己的文章：<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639212089932-79f56c8b-6b79-4b4e-afc1-ca9cea481cad.png#clientId=u4b3a34f9-be23-4&from=paste&height=146&id=ucef95228&margin=%5Bobject%20Object%5D&name=image.png&originHeight=292&originWidth=840&originalType=binary&ratio=1&size=62932&status=done&style=none&taskId=u4a9ddfae-e2cd-400c-a03f-a3363270b8d&width=420" alt="image.png"></p>
+<ol start="8">
+<li>开始发布网站</li>
+</ol>
+<p>以上命令如果不出错，依次执行以下命令<del>（三连命令）</del>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清除缓存网页</span></span><br><span class="line">hexo clean  </span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态网页</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送发布网站，要输入Github账号和token（注意不是密码，github开始已经使用token验证身份）</span></span><br><span class="line">hexo d  </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>Github账号（可能是邮箱、电话、用户名……）</strong></li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639212417477-c52ceb70-4cd1-4fb6-88c2-3580b6adaa0d.png#clientId=u4b3a34f9-be23-4&from=paste&height=311&id=u53a59c06&margin=%5Bobject%20Object%5D&name=image.png&originHeight=898&originWidth=624&originalType=binary&ratio=1&size=45659&status=done&style=none&taskId=u73789de8-151c-4d3b-9c49-3b15b498a89&width=215.98861694335938" alt="image.png"></p>
+<ul>
+<li><strong>token</strong></li>
+</ul>
+<p>点击<a href="https://link.zhihu.com/?target=https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a>，创建你的token。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639212711667-05551d0b-3ac6-4925-8d7c-a58f3f5105ff.png#clientId=u4b3a34f9-be23-4&from=paste&height=528&id=u1abd1e5b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1056&originWidth=1100&originalType=binary&ratio=1&size=156590&status=done&style=none&taskId=ua9b34966-afe4-4352-b5d4-cca5d4dca4f&width=550" alt="image.png"><br>填写完成后，最下边生成token。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639212764055-2d039d90-6db2-486e-8214-aa3861d87603.png#clientId=u4b3a34f9-be23-4&from=paste&height=56&id=ue74c3e38&margin=%5Bobject%20Object%5D&name=image.png&originHeight=112&originWidth=528&originalType=binary&ratio=1&size=7343&status=done&style=none&taskId=u98e5a73d-7b21-4cf4-944a-61c08e22d18&width=264" alt="image.png"><br><a target="_blank" rel="noopener" href="https://github.com/settings/tokens">查看</a>并使用token。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639213242843-00811f81-0469-4879-9a6e-d5fc4a0268b7.png#clientId=u4b3a34f9-be23-4&from=paste&height=247&id=u1e7af49c&margin=%5Bobject%20Object%5D&name=image.png&originHeight=494&originWidth=1358&originalType=binary&ratio=1&size=207490&status=done&style=none&taskId=u25905f08-6283-4889-9405-b5ca4dd1a71&width=679" alt="image.png"></p>
+<p>🐛 解决BUG：<strong>OpenSSL SSL_read：Connection was reset，erron 10054。</strong></p>
+<ul>
+<li>第一种情况：未解除SSL验证</li>
+</ul>
+<p>打开git，切换到<code>www.RUHai.blog/blog</code>目录下，取消SSL验证。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerify <span class="string">&quot;false&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>第二种情况：开了小飞机，让小飞机重新换个服务器重新连接。</li>
+</ul>
+<p>​</p>
+<ol start="9">
+<li>欣赏你自己的网站~！</li>
+</ol>
+<p>现在我们在浏览器输入：<a href="RUHai-Huang.github.io">RUHai-Huang.github.io</a>（浏览器会自动将大写转为小写）, 可以看到我们第一篇博客已经正式发布了！🤙<br>愉快的多欣赏一下吧~<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1534487/1639213580014-b1bfa9de-6694-40c7-88e9-2edc3a32d4c8.png#clientId=u4b3a34f9-be23-4&from=paste&height=167&id=ub43004ef&margin=%5Bobject%20Object%5D&name=image.png&originHeight=334&originWidth=1096&originalType=binary&ratio=1&size=49772&status=done&style=none&taskId=u862665e6-321b-4286-98ca-159474789ef&width=548" alt="image.png"></p>
+<ol start="10">
+<li><strong>TIPS</strong></li>
+</ol>
+<p>💡 一般我们发布文章（或修改主题等）, 流程如下：</p>
+<ul>
+<li><code>**hexo clean &amp;&amp; hexo g &amp;&amp; hexo s**</code> ，打开 <code>localhost:4000</code>本地预览；</li>
+<li>本地进行修改（文章增改、CSS样式修改）；F5刷新下网页即可看到修改后的文章或样式，一般<strong>不需要</strong>重新执行以上三个命令；</li>
+<li>但是如果修改了配置文件则<strong>需要</strong>以上三个命令；</li>
+<li>将本地修改同步到GitHub上<code>**hexo clean &amp;&amp; hexo g &amp;&amp; hexo d**</code><strong>。</strong></li>
+</ul>
+<hr>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Huang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://ruhai-huang.github.io/p/29516/">https://ruhai-huang.github.io/p/29516/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://ruhai-huang.github.io" target="_blank">RUHai's blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img-1304563860.cos.ap-chongqing.myqcloud.com/img/IMG_20200101_124208.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/p/32387/"><img class="next-cover" src="https://img-1304563860.cos.ap-chongqing.myqcloud.com/img/MacBook.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【macOS】实用小技巧</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://img-1304563860.cos.ap-chongqing.myqcloud.com/img/IMG_20200101_124208.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Huang</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/RUHai-Huang/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RUHai-Huang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1149823272@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%B5%81%E5%BB%BA%E7%AB%99%E6%96%B9%E5%BC%8F%E6%AF%94%E8%BE%83"><span class="toc-number">2.</span> <span class="toc-text">主流建站方式比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><span class="toc-number">3.</span> <span class="toc-text">快速开始</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C%EF%BC%9AGithub-amp-Git"><span class="toc-number">3.1.</span> <span class="toc-text">准备工作：Github &amp; Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%AD%E5%BB%BAHexo"><span class="toc-number">3.2.</span> <span class="toc-text">搭建Hexo</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/p/29516/" title="Hexo+Github Pages快速打造属于自己的网站">Hexo+Github Pages快速打造属于自己的网站</a><time datetime="2021-12-11T09:25:00.000Z" title="发表于 2021-12-11 17:25:00">2021-12-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/32387/" title="【macOS】实用小技巧"><img src="https://img-1304563860.cos.ap-chongqing.myqcloud.com/img/MacBook.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【macOS】实用小技巧"/></a><div class="content"><a class="title" href="/p/32387/" title="【macOS】实用小技巧">【macOS】实用小技巧</a><time datetime="2021-12-10T04:00:00.000Z" title="发表于 2021-12-10 12:00:00">2021-12-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/p/16107/" title="Hello World">Hello World</a><time datetime="2021-12-09T10:25:28.045Z" title="发表于 2021-12-09 18:25:28">2021-12-09</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2021 By Huang</div><div class="footer_custom_text">Support By <a target="_blank" rel="noopener" href="https://cloud.tencent.com/" style="text-decoration:underline; color:#476679;"> Tencent Cloud </a> |  <a target="_blank" rel="noopener" href="https://hexo.io/" style="text-decoration:underline; color:#476679;">Hexo</a> | <a target="_blank" rel="noopener" href="https://butterfly.js.org/" style="text-decoration:underline; color:#476679;">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
